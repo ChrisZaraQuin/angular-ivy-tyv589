@@ -1,0 +1,27 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Aplicaciones Web con Angular
+</p>
+
+<p> Número 1 : <input [(ngModel)] = "num1" /> </p>
+<p> Número 2 : <input [(ngModel)] = "num2" /> </p>
+
+<p> La suma de números es: {{+num1 + +num2}} </p>
+
+<table>
+  <thead>
+    <tr>
+      <th>#id</th>
+      <th>#Nombre de Curso</th>
+      <th>#Nota</th>
+    </tr>
+  </thead>
+  <body>
+    <tr *ngFor="let item of objCurso">
+      <td> {{item.id}} </td>
+      <td> {{item.nombre}} </td>
+      <td> {{item.nota}} </td>
+
+    </tr>
+  </body>
+<table>
